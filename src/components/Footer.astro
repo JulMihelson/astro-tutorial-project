@@ -1,0 +1,23 @@
+---
+import Social from './Social.astro';
+
+const linkedIn = "yuliya-mykhalkova"
+const social = "linkedIn"
+---
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
+
+<footer>
+  
+   <p>Connect to my linkedIn to share news and experience <a rel="no-referrer" target="_blank" href={`https://www.${social}.com/in/${linkedIn}`}>{social}</a>!</p>
+
+
+   <Social platform="twitter" username="astrodotbuild" />
+  <Social platform="github" username="withastro" />
+  <Social platform="youtube" username="astrodotbuild" />
+</footer>
